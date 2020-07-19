@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try Learning</title>
+</head>
+<body>
+<style>
+div.a {
+padding-left: 500px;
+}
+</style>
+<form action="{% url 'password' %}">
+<div id="mydiv" class = a style="width:500px;background:white">
+    <h1>Generate a strong password</h1>
+    <select name="length" id="Q1">
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10" selected>10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <label for="Q1">Select the strength of the password</label>
+    <br><br><br><br>
+    <input type="checkbox" id ="Q2" name="Capital" style="margin-left:0.5em;">
+    <label for="Q2">Should include capital letters?</label>
+    <br><br><br>
+    <input type="checkbox" id ="Q3" name="Numbers" style="margin-left:0.5em;">
+    <label for="Q3">Should include numbers?</label>
+    <br><br><br>
+    <input type="checkbox" id ="Q4" name="Chars" style="margin-left:0.5em;">
+    <label for="Q4">Should include special characters?</label>
+    <br><br><br>
+    <input type="submit" value="Generate Password" class="btn btn-primary">
+</div>
+
+    </form>
+</body>
+</html>
